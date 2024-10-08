@@ -20,7 +20,7 @@ function ChangePassword() {
         }
 
         try {
-            const response = await fetch('https://vercel.live/link/horoscopo-backend-mu.vercel.app?via=project-dashboard-alias-list&p=1', {
+            const response = await fetch('http://horoscopo-backend-mu.vercel.app/v1/signos/change-password', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

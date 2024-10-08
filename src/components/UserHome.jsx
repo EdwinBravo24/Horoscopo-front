@@ -17,7 +17,7 @@ function UserHome({ user }) {
     async function handleSelect(event) {
         const signo = event.target.value;
         if (signo !== "0") {
-            fetch(`https://vercel.live/link/horoscopo-backend-mu.vercel.app?via=project-dashboard-alias-list&p=1/${signo}`)
+            fetch(`http://}horoscopo-backend-mu.vercel.app/v1/signos/${signo}`)
                 .then(response => response.json())
                 .then(responseData => setTextoSigno(responseData))
         }

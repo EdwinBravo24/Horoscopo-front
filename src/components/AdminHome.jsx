@@ -43,7 +43,7 @@ function AdminHome({ user }) {
         }
 
         if (signoEditar && generoEditar) {
-            fetch(`https://vercel.live/link/horoscopo-backend-mu.vercel.app?via=project-dashboard-alias-list&p=1/${signoEditar}?genero=${generoEditar}`, {
+            fetch(`http://horoscopo-backend-mu.vercel.app/v1/signos/${signoEditar}?genero=${generoEditar}`, {
                 method: 'PATCH',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ "textoEditar": textoEditar })

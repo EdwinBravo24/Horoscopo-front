@@ -10,7 +10,7 @@ function Form({ callback }) {
     const validateUser = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('https://vercel.live/link/horoscopo-backend-mu.vercel.app?via=project-dashboard-alias-list&p=1', {
+            const response = await fetch('https://horoscopo-backend-mu.vercel.app/v1/signos/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
