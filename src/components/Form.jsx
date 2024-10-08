@@ -10,7 +10,7 @@ function Form({ callback }) {
     const validateUser = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('http://localhost:4000/v1/signos/login', {
+            const response = await fetch('http://horoscopo-backend-mu.vercel.app', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
