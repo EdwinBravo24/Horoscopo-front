@@ -1,0 +1,93 @@
+/* Estilos generales del contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #d5a6e8;
+    /* Color de fondo morado */
+}
+
+/* Estilos del título */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    /* Color blanco para el título */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    font-style: italic;
+    /* Estilo cursiva */
+}
+
+/* Etiquetas */
+label {
+    font-size: 1.2rem;
+    color: white;
+    /* Etiquetas en blanco */
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Inputs de usuario y contraseña */
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    font-size: 1rem;
+    background-color: #3d3b3b;
+    /* Fondo gris oscuro para los inputs */
+    color: white;
+    /* Texto blanco */
+}
+
+/* Checkbox para mostrar la contraseña */
+.show-password {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.show-password input {
+    margin-right: 10px;
+}
+
+.show-password label {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btnCrear {
+    background-color: #e2f110;
+    /* Color amarillo del botón Crear Usuario */
+    color: black;
+    /* Texto negro */
+}
+
+#btnHome {
+    background-color: blue;
+    /* Color azul del botón Volver a Inicio */
+}
+
+/* Cambiar color al pasar sobre los botones */
+button:hover {
+    opacity: 0.8;
+}
